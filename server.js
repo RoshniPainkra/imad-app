@@ -36,10 +36,10 @@ var article={
 
 
 function createTemplate(data){
-    var title;
-    var date;
-    var heading;
-    var content;
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
     
     
 var htmlTemplate=`
