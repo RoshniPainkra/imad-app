@@ -10,11 +10,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile("done1"));
+  res.send("done1"));
 });
 
 app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.send(path.join(__dirname, 'ui', 'style.css'));
 });
 
 app.get('/article-two', function (req, res) {
@@ -26,7 +26,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/article-three', function (req, res) {
-  res.sendFile("done3"));
+  res.send("done3"));
 });
 
 
