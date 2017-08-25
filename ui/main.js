@@ -6,7 +6,7 @@ var ele=document.getElementById("maint");
 ele.innerHTML="Roshni Roshni";
 
 //Move the image
-var img=document.getElementById("img");
+var img=document.getElementById("modi");
 img.onClick= function()
 {
     img.style.marginLeft= '100px';
