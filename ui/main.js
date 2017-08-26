@@ -34,7 +34,7 @@ button.onclick=function()
     //capture the response and store it in variable
     request.onreadystatechange=function()
     {
-        if(request.readystate === XMLHttpRequest.DONE)
+        if(request.readyState === XMLHttpRequest.DONE)
         {
             //take action
             if(request.status===200)
@@ -52,16 +52,9 @@ button.onclick=function()
    request.send(null);
    
    
-   
-   
-   
     //render the variable in correct span
     // // counter=counter+1;
     //  var span=document.getElementById('count');
     //             span.innerHTML= counter.toString();
-    
-    
-    
-    
     
 };
