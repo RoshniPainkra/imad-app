@@ -49,7 +49,7 @@ button.onclick=function()
     };
    //Make request
    request.open('GET','http://anshikarosh.imad.hasura-app.io/counter',true);
-   request.sent(null);
+   request.send(null);
    
    
    
