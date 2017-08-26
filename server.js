@@ -10,25 +10,20 @@ var article={
     heading:'Article-1',
     date: '10 April,2013',
     content:`   <p>
-                My Article.My Article.My Article.My Article.My Article.My Article.My Article.My Article.
-                    My Article.
+                
                         My Article.
                             My Article.
                                 My Article.    My Article.
             </p>
             
             <p>
-                My Article.My Article.My Article.My Article.My Article.My Article.My Article.
-                    My Article.
-                        My Article.
+               
                             My Article.
                                 My Article.    My Article.
             </p>
             
             <p>
-                My Article.
-                    My Article.
-                        My Article.
+               
                             My Article.
                                 My Article.    My Article.
             </p> `
@@ -76,6 +71,14 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
+var counter=0;
+app.get('/counter', function (req, res) {
+   counter= counter+1;
+   res.send(counter.toString());
+});
+
+
 
 app.get('/article-one', function (req, res) {
    res.send(createTemplate(article));
