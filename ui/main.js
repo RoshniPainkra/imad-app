@@ -47,7 +47,14 @@ button.onclick=function()
         
         //not done yet
     };
-    
+   //Make request
+   request.open('GET','http://anshikarosh.imad.hasura-app.io/counter',true);
+   request.sent(null);
+   
+   
+   
+   
+   
     //render the variable in correct span
     // // counter=counter+1;
     //  var span=document.getElementById('count');
